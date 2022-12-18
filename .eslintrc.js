@@ -11,6 +11,13 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    '@typescript-eslint/indent': [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+      },
+    ],
     'arrow-parens': [
       'warn',
       'as-needed',
@@ -20,13 +27,7 @@ module.exports = {
     ],
     'comma-dangle': ['warn', 'always-multiline'],
     'eol-last': ['warn', 'always'],
-    indent: [
-      'error',
-      2,
-      {
-        SwitchCase: 1,
-      },
-    ],
+    indent: 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-unused-vars': 'warn',
     quotes: [
