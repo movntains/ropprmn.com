@@ -62,7 +62,7 @@
               <div class="flex items-center flex-shrink-0 py-5 pl-8 pr-4">
                 <NuxtLink
                   :to="{ name: 'index' }"
-                  class="custom-focus rounded-md text-brand-teal"
+                  class="custom-focus rounded-sm text-brand-teal transition hover:scale-110 hover:!text-brand-orange"
                 >
                   <span class="sr-only">Home</span>
                   <SvgLogo />
