@@ -12,6 +12,7 @@
         </div>
       </main>
     </div>
+    <AppFooter />
   </div>
 </template>
 
