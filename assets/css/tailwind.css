@@ -21,6 +21,20 @@ body {
   ;
 }
 
+@layer components {
+  .inline-link {
+    @apply
+      inline-flex
+      pb-0.5
+      border-b-2 border-brand-orange
+      text-brand-slate-lighter
+      transition-colors
+      hover:border-brand-purple hover:text-brand-slate-lightest
+      focus-visible:border-transparent focus-visible:rounded-md
+    ;
+  }
+}
+
 @layer utilities {
   .custom-focus {
     @apply

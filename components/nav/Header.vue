@@ -1,5 +1,8 @@
 <template>
-  <header class="fixed top-0 z-50 w-full py-8 px-12 transition-colors">
+  <header
+    class="fixed top-0 z-50 w-full py-8 px-12 transition-colors"
+    :class="{ 'bg-brand-charcoal shadow': scrollPosition > 50 }"
+  >
     <div class="container flex justify-between items-baseline md:items-center">
       <NuxtLink
         :to="{ name: 'index' }"
@@ -15,5 +18,27 @@
 </template>
 
 <script setup lang="ts">
+import throttle from 'lodash.throttle'
 
+const route = useRoute()
+const scrollCookie = useCookie('lastScrollTop')
+const scrollPosition = ref(Number(scrollCookie) || 0)
+
+const updateScroll = () => {
+  scrollPosition.value = window.scrollY
+
+  scrollCookie.value = scrollPosition.toString()
+}
+
+watch(route, () => {
+  scrollPosition.value = 0
+})
+
+onMounted(() => {
+  window.addEventListener('scroll', throttle(updateScroll, 200, { leading: true }))
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', updateScroll)
+})
 </script>
