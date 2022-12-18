@@ -52,5 +52,6 @@ module.exports = {
         multiline: 1,
       },
     ],
+    'vue/multi-word-component-names': 'off',
   },
 }
