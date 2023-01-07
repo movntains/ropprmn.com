@@ -53,6 +53,39 @@ body {
       hover:after:w-full hover:after:left-0
     ;
   }
+
+  .custom-border {
+    background: linear-gradient(
+      90deg,
+      #303030 0%,
+      #303030 25%,
+      #0047e1 50%,
+      #36e4da 75%,
+      #00dc82 100%
+    );
+    transition: background-position 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
+    mask-composite: exclude;
+
+    @apply
+      content-['']
+      absolute inset-0
+      w-full
+      p-[2px]
+      rounded-lg
+      bg-[400%_auto] bg-[0_0]
+      opacity-50
+    ;
+  }
+
+  .custom-border--hover {
+    @apply
+      hover:before:bg-[-50%_0]
+      hover:before:opacity-100
+      focus-visible:before:bg-[-50%_0]
+      focus-visible:before:opacity-100
+    ;
+  }
 }
 
 @tailwind utilities;
