@@ -18,6 +18,7 @@ module.exports = {
         SwitchCase: 1,
       },
     ],
+    '@typescript-eslint/no-unused-vars': 'warn',
     'arrow-parens': [
       'warn',
       'as-needed',
@@ -29,7 +30,6 @@ module.exports = {
     'eol-last': ['warn', 'always'],
     indent: 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-unused-vars': 'warn',
     quotes: [
       'warn',
       'single',

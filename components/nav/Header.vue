@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 z-50 w-full py-8 px-12 transition-colors"
+    class="fixed top-0 z-50 w-full py-8 px-8 transition-colors md:px-12"
     :class="{ 'bg-brand-charcoal shadow': scrollPosition > 50 }"
   >
     <div class="container flex justify-between items-baseline md:items-center">

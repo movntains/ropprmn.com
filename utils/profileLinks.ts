@@ -1,7 +1,4 @@
-interface ProfileLinks {
-  gitHub: string
-  linkedIn: string
-}
+import type { ProfileLinks } from '@/types/ProfileLinks'
 
 const profileLinks: ProfileLinks = {
   gitHub: 'https://github.com/movntains',
