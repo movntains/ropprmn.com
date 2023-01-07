@@ -1,7 +1,4 @@
-interface NavLink {
-  label: string
-  page: string
-}
+import type { NavLink } from '@/types/NavLink'
 
 const navLinks: NavLink[] = [
   {
