@@ -14,7 +14,7 @@
           learning a new language.
         </p>
         <p>
-          Feel to
+          Feel free to
           <a
             href="https://www.notion.so/906e35079c3b43769cbedf536bab3f4a?v=aac27d0e71f24037a4c71cbbc4a7361b"
             target="_blank"
