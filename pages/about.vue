@@ -2,7 +2,7 @@
   <AppPageWrapper>
     <section class="pt-16">
       <AppPageHeading>About</AppPageHeading>
-      <div class="space-y-7 mt-6 font-light text-base text-brand-slate leading-7">
+      <div class="space-y-7 font-light text-base text-brand-slate leading-7">
         <p>
           I'm a full-stack web developer with a passion for building fully accessible user interfaces
           and performant, secure APIs. I work primarily with Vue and React on the frontend and Laravel
